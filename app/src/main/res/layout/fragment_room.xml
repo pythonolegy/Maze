@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- GridView для лабиринта -->
+    <GridView
+        android:id="@+id/maze_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:layout_centerInParent="true"
+        android:stretchMode="columnWidth" />
+
+    <!-- Линейный контейнер для кнопок внизу экрана -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!-- Кнопка "Up" -->
+        <ImageButton
+            android:id="@+id/button_up"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="Up"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_up" />
+
+        <!-- Линейный контейнер для кнопок "Left" и "Right" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="-2dp"> <!-- Сдвигаем контейнер вверх на половину высоты кнопки Up -->
+
+            <!-- Кнопка "Left" -->
+            <ImageButton
+                android:id="@+id/button_left"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="Left"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_left" />
+
+            <!-- Кнопка "Down" -->
+            <ImageButton
+                android:id="@+id/button_down"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="Down"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_down" />
+
+            <!-- Кнопка "Right" -->
+            <ImageButton
+                android:id="@+id/button_right"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="Right"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

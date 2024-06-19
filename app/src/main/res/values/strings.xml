@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Maze</string>
+    <string name="Up">up</string>
+    <string name="Down">down</string>
+    <string name="Left">left</string>
+    <string name="Right">right</string>
+
+</resources>
